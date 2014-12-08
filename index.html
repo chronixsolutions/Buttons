@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Buttons by chronixsolutions</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Buttons</h1>
+        <p>A CSS button library built using Sass and Compass</p>
+        <p class="view"><a href="https://github.com/chronixsolutions/Buttons">View the Project on GitHub <small>chronixsolutions/Buttons</small></a></p>
+        <ul>
+          <li><a href="https://github.com/chronixsolutions/Buttons/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/chronixsolutions/Buttons/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/chronixsolutions/Buttons">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="buttons" class="anchor" href="#buttons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Buttons</h1>
+
+<p>Buttons is a fully customizable CSS button library that's built using Sass &amp; Compass, and created by <a href="https://twitter.com/alexwolfe">Alex Wolfe</a> and <a href="https://twitter.com/roblevintennis">Rob Levin</a>.</p>
+
+<p>Quickly get started by <a href="http://unicorn-ui.github.io/Buttons/">visiting the Buttons Builder Website</a> where you can view live examples and fully customize your Buttons download.</p>
+
+<p><a href="http://unicorn-ui.github.io/Buttons/"><img src="https://dl.dropboxusercontent.com/u/1517246/builder.png" alt="Example of Buttons" title="Example of Buttons"></a></p>
+
+<h1>
+<a id="setup--installation" class="anchor" href="#setup--installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup &amp; Installation</h1>
+
+<ol>
+<li>Visit the <a href="http://unicorn-ui.github.io/Buttons/">Buttons Builder Website</a>, download and add files to your website.</li>
+<li>Include css in the head of your webpage. <em>You only need the font-awesome css if you're using icons</em>
+<code>&lt;link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"&gt;</code>
+<code>&lt;link rel="stylesheet" href="css/buttons.css"&gt;</code>
+</li>
+<li>Include jQuery and buttons.js if you're using dropdown menu buttons.
+<code>&lt;script src="http://code.jquery.com/jquery-1.10.1.min.js"&gt;&lt;/script&gt;</code>
+<code>&lt;script type="text/javascript" src="js/buttons.js"&gt;&lt;/script&gt;</code>
+</li>
+<li>Create buttons in your html. <a href="http://unicorn-ui.github.io/Buttons/">View code examples here</a>.</li>
+</ol>
+
+<h1>
+<a id="or-install-with-bower" class="anchor" href="#or-install-with-bower" aria-hidden="true"><span class="octicon octicon-link"></span></a>or Install with Bower</h1>
+
+<p>You can also install Buttons using <a href="http://bower.io/">Bower</a> if you're using that for your package management.</p>
+
+<p><code>Bower install Buttons</code></p>
+
+<h1>
+<a id="using-as-a-partial" class="anchor" href="#using-as-a-partial" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using as a Partial</h1>
+
+<p>You can easily import Buttons as a partial into an existing project.</p>
+
+<div class="highlight highlight-css"><pre><span class="pl-k">@import</span> <span class="pl-s1"><span class="pl-pds">'</span>partials/buttons<span class="pl-pds">'</span></span>;</pre></div>
+
+<p>The buttons partial will, in turn, import compass plus any additional partials included in the Buttons library that you'll need.</p>
+
+<h1>
+<a id="customize-buttons" class="anchor" href="#customize-buttons" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customize Buttons</h1>
+
+<ol>
+<li>Clone the Buttons repo</li>
+<li>Make sure you have Sass and Compass installed</li>
+<li>Edit the <code>partials/_options.scss</code> with your own custom values (see example values below)</li>
+<li>Run the <em>compass watch</em> command from the root directory of the Buttons directory from the command line</li>
+<li>The buttons.css file should now be updated</li>
+</ol>
+
+<h2>
+<a id="general-options" class="anchor" href="#general-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>General Options</h2>
+
+<p>In order to edit your Button options, simply change option values within the <em>partials/_options.scss</em> file to your liking. After you make your edits run <em>compass watch</em> in the root of the button directory and the updates should take place.
+You can open up index.html in a browser to view your changes.</p>
+
+<ul>
+<li>
+<strong>$unicorn-btn-namespace:</strong>  Desired CSS namespace for your buttons (default .button)</li>
+<li>
+<strong>$unicorn-btn-glow_namespace:</strong> Desired CSS namespace for your glow effect (default .glow)</li>
+<li>
+<strong>$unicorn-btn-glow_color:</strong> Default glow color (#2c9adb, light blue)</li>
+<li>
+<strong>$unicorn-btn-bgcolor:</strong> Default button background color (#EEE, light gray)</li>
+<li>
+<strong>$unicorn-btn-height:</strong> Default height, also used to calculate padding on the sides (32px)</li>
+<li>
+<strong>$unicorn-btn-font-color:</strong> Default font color (#666, gray)</li>
+<li>
+<strong>$unicorn-btn-font-size:</strong> Default font size (14px)</li>
+<li>
+<strong>$unicorn-btn-font-weight:</strong> Default font weight (300)</li>
+<li>
+<strong>$unicorn-btn-font-family:</strong>  Default font family ("HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif)</li>
+</ul>
+
+<h2>
+<a id="advanced-options" class="anchor" href="#advanced-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced Options</h2>
+
+<p>The only option you should adjust here is the button actions. When you need to add/remove/edit another button
+color simply add/remove/edit one of the items in the list. There is no limit to the number of items in your list (hint: you can create additional items if you wish). Each item will create a new button.</p>
+
+<ul>
+<li>
+<strong>$unicorn-btn-actions:</strong> Edit this to add new buttons ('name' background-color font-color) example: ('highlight' #F18D05 #FFF) ('caution' #E54028 #FFF)</li>
+<li>
+<strong>$unicorn-btn-types:</strong> Correspond to the styles avaialble ('rounded' 'pill' 'circle')</li>
+<li>
+<strong>$unicorn-btn-sizes:</strong> Correspond to the sizes avaialble ('large' 'small' 'tiny')</li>
+<li><p><strong>$unicorn-btn-circle-size:</strong> Radius for circle buttons, circles only have one size (120px)</p></li>
+<li><p><strong>$unicorn-btn-dropdown-background:</strong> Backround color of dropdown menu</p></li>
+<li>
+<strong>$unicorn-btn-dropdown-link-color:</strong> Link color in dropdown menu</li>
+<li>
+<strong>$unicorn-btn-dropdown-link-hover:</strong> Hover color for link in dropdown menu</li>
+<li>
+<strong>$unicorn-btn-dropdown-link-hover-background:</strong> Background hover color for link in dropdown menu</li>
+</ul>
+
+<h1>
+<a id="browser-support" class="anchor" href="#browser-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Browser Support</h1>
+
+<p>Buttons works in All modern browsers (Firefox, Chrome, Safari, IE) and gracefully degrades all the way down to Internet Explorer 8.</p>
+
+<h1>
+<a id="authors" class="anchor" href="#authors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors</h1>
+
+<p>Created by Alex Wolfe <a href="https://twitter.com/alexwolfe">@alexwolfe</a> and Rob Levin <a href="https://twitter.com/roblevintennis">@roblevintennis </a></p>
+
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/alexwolfe/buttons/trend.png" alt="Bitdeli Badge"></a></p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/chronixsolutions">chronixsolutions</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
